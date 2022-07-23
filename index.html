@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./" />
+
+    <title>SOMa</title>
+
+    <style>
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(
+          to right,
+          rgb(20, 147, 220),
+          rgb(5, 111, 160)
+        );
+      }
+.box{
+
+  border: 3px solid rgb(206, 230, 253);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(152, 56%, 80%, 0.3);
+  padding: 15px;
+  border-radius: 18px;
+  width: 40%;
+
+}
+
+#n1 {
+  width: 20%;
+}
+
+#n2 {
+  width: 20%;
+}
+  
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <h1><b>Função Soma</b> </h1>
+
+      <input id="n1" type="number" /> +
+      <br><br>
+      <input id="n2" type="number" />
+      <br/><br/>
+
+      <button id="button" onclick="calcula()">Calcular</button>
+
+      <p><b>O resultado é :</b>  <span id="r"></span></p>
+    </div>
+
+    <script src="./soma.js"></script>
+  </body>
+</html>
